@@ -1,0 +1,8 @@
+[Buildset]
+Number of Builditems=0
+
+[Run Options]
+Run Targets=qtnx
+
+[qtnx-Run Options]
+Executable=file:///home/nitroman70/devel/qtnx-1.5-mponcet/sources_mponcet/qtnx/qtnx

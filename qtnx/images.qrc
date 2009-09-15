@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="images" >
+    <file>images/dotriver_QTNX.png</file>
+  </qresource>
+</RCC>
