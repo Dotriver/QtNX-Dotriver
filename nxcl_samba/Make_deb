@@ -1,0 +1,18 @@
+#!/bin/bash
+pwd=`pwd`
+mkdir -p DEBS/nxcl_samba/DEBIAN
+./configure --prefix="$pwd/DEBS/nxcl_samba"
+make
+make install
+echo "Package: nxcl_samba
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash
+Maintainer: Hugues CHARBONNIER <hcharbonnier@dotriver.eu>
+Description: nxcl_samba
+" > DEBS/nxcl_samba/DEBIAN/control
+cd DEBS
+dpkg --build nxcl_samba
+echo "Paquet construit dans le répertoire ./DEBS"

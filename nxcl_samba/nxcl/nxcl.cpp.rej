@@ -1,0 +1,17 @@
+***************
+*** 449,455 ****
+  {
+  	// First things first; set the sessionData.
+  	// FIXME: Should check if this->sessionData has been set.
+- 	this->nxclientlib.setSessionData (&this->sessionData);
+  
+  	this->nxclientlib.setUsername (this->nxuser);
+  	this->nxclientlib.setPassword (this->nxpass);
+--- 449,455 ----
+  {
+  	// First things first; set the sessionData.
+  	// FIXME: Should check if this->sessionData has been set.
++ 	this->nxclientlib.setSession (&this->sessionData);
+  
+  	this->nxclientlib.setUsername (this->nxuser);
+  	this->nxclientlib.setPassword (this->nxpass);

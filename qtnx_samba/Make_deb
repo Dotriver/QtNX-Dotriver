@@ -1,0 +1,19 @@
+#!/bin/bash
+pwd=`pwd`
+mkdir -p DEBS/qtnx-samba/DEBIAN
+mkdir -p DEBS/qtnx-samba/usr/bin
+qmake-qt4
+make
+cp qtnx DEBS/qtnx-samba/usr/bin/
+echo "Package: qtnx-samba
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash
+Maintainer: Hugues CHARBONNIER <hcharbonnier@dotriver.eu>
+Description: qtnx-samba
+" > DEBS/qtnx-samba/DEBIAN/control
+cd DEBS
+dpkg --build qtnx-samba
+echo "Paquet construit dans le répertoire ./DEBS"

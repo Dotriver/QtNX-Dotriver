@@ -1,0 +1,17 @@
+***************
+*** 296,302 ****
+  		 * information to the nxclientlib object so it can
+  		 * start up the desired connection.
+  		 */
+- 		NXSessionData sessionData;
+  		/*!
+  		 * The connection to the dbus daemon.
+  		 */
+--- 296,302 ----
+  		 * information to the nxclientlib object so it can
+  		 * start up the desired connection.
+  		 */
++ 		NXSession sessionData;
+  		/*!
+  		 * The connection to the dbus daemon.
+  		 */
