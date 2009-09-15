@@ -43,7 +43,7 @@ using namespace std;
 
 namespace nxcl {
 
-	class NXData
+	class NXData //commentaire bidon pour voir si ça marche
 	{
 	    public:
 		string getServerHost(void)
